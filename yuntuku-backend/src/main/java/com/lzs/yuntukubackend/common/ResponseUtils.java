@@ -2,6 +2,10 @@ package com.lzs.yuntukubackend.common;
 
 import com.lzs.yuntukubackend.exception.ErrorCode;
 
+/**
+ * 专门用于构造响应类的工具类
+ * @param <T>
+ */
 public class ResponseUtils<T>
 {
     /**
