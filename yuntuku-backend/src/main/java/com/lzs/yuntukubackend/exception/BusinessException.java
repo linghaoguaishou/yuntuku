@@ -1,9 +1,12 @@
 package com.lzs.yuntukubackend.exception;
 
 
+import lombok.Getter;
+
 /**
  * 异常类
  */
+@Getter
 public class BusinessException extends RuntimeException
 {
     /**
