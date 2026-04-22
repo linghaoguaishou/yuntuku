@@ -1,0 +1,22 @@
+package com.lzs.yuntukubackend.service.impl;
+
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.lzs.yuntukubackend.model.entity.User;
+import com.lzs.yuntukubackend.service.UserService;
+import com.lzs.yuntukubackend.mapper.UserMapper;
+import org.springframework.stereotype.Service;
+
+/**
+* @author 86182
+* @description 针对表【user_center(用户表)】的数据库操作Service实现
+* @createDate 2026-04-22 20:59:46
+*/
+@Service
+public class UserServiceImpl extends ServiceImpl<UserMapper, User>
+    implements UserService{
+
+}
+
+
+
+
