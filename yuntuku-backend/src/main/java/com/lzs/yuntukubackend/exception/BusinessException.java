@@ -19,7 +19,7 @@ public class BusinessException extends RuntimeException
      * @param message 表示异常的信息
      * @param code 表示错误码
      */
-    public BusinessException(String message, int code) {
+    public BusinessException( int code,String message) {
         super(message);
         this.code = code;
     }
@@ -30,7 +30,7 @@ public class BusinessException extends RuntimeException
      */
     public BusinessException(ErrorCode errorCode)
     {
-        this(errorCode.getMessage(),errorCode.getCode());
+        this(errorCode.getCode(),errorCode.getMessage());
     }
 
     /**
@@ -40,7 +40,7 @@ public class BusinessException extends RuntimeException
      */
     public BusinessException(ErrorCode errorCode,String message)
     {
-        this(message,errorCode.getCode());
+        this(errorCode.getCode(),message);
     }
 
 }

@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
+
+import java.io.Serializable;
 import java.util.Date;
 import lombok.Data;
 
@@ -13,7 +15,8 @@ import lombok.Data;
  */
 @TableName(value ="user_center")
 @Data
-public class User {
+public class User implements Serializable {
+    private static final long serialVersionUID = -6156807283252291289L;
     /**
      * 用户id
      */
@@ -68,6 +71,6 @@ public class User {
     /**
      * 逻辑删除
      */
-    @TableLogic
+    @TableLogic(value = "0", delval = "1")
     private Integer isDelete;
 }
