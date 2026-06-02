@@ -20,7 +20,7 @@ public class GlobalExceptionHandler
      * @param exception BusinessException
      * @return BaseResponse
      */
-    @ExceptionHandler(BuilderException.class)
+    @ExceptionHandler(BusinessException.class)
     public BaseResponse BusinessExceptionHandler(BusinessException exception)
     {
         log.error("BusinessException",exception);
