@@ -11,7 +11,11 @@ spring:
     url: jdbc:mysql://localhost:3306/lzs-picture
     username: root
     password: lzs204309787
-
+  profiles:
+    active: local
+  servlet:
+    multipart:
+      max-request-size: 10MB
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
@@ -33,5 +37,3 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.lzs.yuntukubackend.controller
-
-

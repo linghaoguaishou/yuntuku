@@ -15,7 +15,11 @@ public class ResponseUtils<T>
      */
     public static <T> BaseResponse<T> success(T data)
     {
-        return new BaseResponse<>(200,data,"调用接口成功，返回数据");
+        return new BaseResponse<>(200, data, "调用接口成功");
+    }
+
+    public static <T> BaseResponse<T> success(T data, String message) {
+        return new BaseResponse<>(200, data, message);
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.lzs.yuntukubackend.model.dto;
+package com.lzs.yuntukubackend.model.request.user;
 
 import lombok.Data;
 
@@ -16,10 +16,12 @@ public class UserRegisterRequest implements Serializable
      * 账号
      */
     private String userAccount;
+
     /**
      * 密码
      */
     private String userPassword;
+
     /**
      * 验证密码
      */
